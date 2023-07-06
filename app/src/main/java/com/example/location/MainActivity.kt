@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         title = "Location App"
+        tvGpsLocation = findViewById(R.id.textView)
         val button: Button = findViewById(R.id.getLocation)
         button.setOnClickListener {
             getLocation()
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
         if ((ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), locationPermissionCode)
         }
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5f, this)
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 5f, this)
     }
     override fun onLocationChanged(location: Location) {
         tvGpsLocation = findViewById(R.id.textView)
