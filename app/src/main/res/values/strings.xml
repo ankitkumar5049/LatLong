@@ -2,4 +2,5 @@
     <string name="app_name">Location</string>
     <string name="latitudeBabel">Latitude</string>
     <string name="longitudeBabel">Longitude</string>
+    <string name="terms_and_conditions">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus pretium nibh, in ullamcorper ex sollicitudin non. Etiam sed malesuada metus, id malesuada neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis eget est sit amet ligula facilisis ullamcorper. Nam ac enim at tortor ullamcorper semper vel nec erat. Nunc venenatis malesuada urna, sed bibendum massa malesuada id. Suspendisse tincidunt odio ut nulla consectetur, ut euismod nunc volutpat. Nunc in nisl ac velit laoreet rhoncus nec sed magna. Duis eget est sit amet ligula facilisis ullamcorper. Nam ac enim at tortor ullamcorper semper vel nec erat. Nunc venenatis malesuada urna, sed bibendum massa malesuada id. Suspendisse tincidunt odio ut nulla consectetur, ut euismod nunc volutpat. Nunc in nisl ac velit laoreet rhoncus nec sed magna.</string>
 </resources>

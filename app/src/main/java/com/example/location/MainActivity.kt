@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
@@ -23,6 +24,7 @@ import com.google.android.gms.location.LocationServices
 class MainActivity : AppCompatActivity() {
     private lateinit var locationManager: LocationManager
     private lateinit var tvGpsLocation: TextView
+    private lateinit var button: Button
     private val locationPermissionCode = 2
 
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
@@ -36,6 +38,11 @@ class MainActivity : AppCompatActivity() {
         title = "Location App"
         tvGpsLocation = findViewById(R.id.textView)
             getCurrentLocation()
+        button = findViewById(R.id.button)
+
+        button.setOnClickListener {
+            startActivity(Intent(this, MainActivity2::class.java))
+        }
     }
 
     @RequiresApi(Build.VERSION_CODES.P)
