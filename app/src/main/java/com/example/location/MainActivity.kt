@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var locationManager: LocationManager
     private lateinit var tvGpsLocation: TextView
     private lateinit var button: Button
+    private lateinit var button2: Button
     private val locationPermissionCode = 2
 
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
@@ -39,9 +40,13 @@ class MainActivity : AppCompatActivity() {
         tvGpsLocation = findViewById(R.id.textView)
             getCurrentLocation()
         button = findViewById(R.id.button)
+        button2 = findViewById(R.id.button2)
 
         button.setOnClickListener {
             startActivity(Intent(this, MainActivity2::class.java))
+        }
+        button2.setOnClickListener {
+            startActivity(Intent(this, MainActivity3::class.java))
         }
     }
 
